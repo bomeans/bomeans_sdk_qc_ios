@@ -1,0 +1,2 @@
+mingo
+ios sdk test function
