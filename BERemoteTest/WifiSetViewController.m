@@ -51,11 +51,7 @@
     
     NSString* ssid = _ssidField.text;
     NSString* password = _passwordField.text;
-    
-    if ([ssid isEqualToString:@"Bomeans"]) {
-        password = @"bome@NS$!416";
-    }
-    
+
     int result = [_dataProvider.irKit broadcastSSID:ssid passWord:password authMode:AuthModeAutoSwitch waitTime:3 delegate:self];
     
     //NSString *msg;
