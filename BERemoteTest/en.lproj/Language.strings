@@ -1,0 +1,19 @@
+/* 
+  Language.strings
+  BERemoteTest
+
+  Created by Hung Ricky on 2016/8/15.
+  Copyright © 2016年 Hung Ricky. All rights reserved.
+*/
+
+"類型清單" = "TypeList";
+"廠牌清單"="BrandList";
+"型號清單"="ModelList";
+"創建遙控器"="CreateRemote";
+"創建大萬能"="CreateBigCombine";
+"智慧選碼按鍵"="SmartPickerKey";
+"按鍵清單"="KeyList";
+"智慧選碼"="CreateSmartPicker";
+
+"語言" = "Language";
+"設定" = "Setting";

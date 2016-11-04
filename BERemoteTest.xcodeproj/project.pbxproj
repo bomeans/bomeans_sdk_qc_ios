@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B21FEB4D1D6D9395008B18CC /* libIRLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21FEB4C1D6D9395008B18CC /* libIRLib.a */; };
-		B21FEB4F1D6D939F008B18CC /* liblibelian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B21FEB4E1D6D939F008B18CC /* liblibelian.a */; };
-		B2279B6B1D6D45520099A2BF /* IR in Resources */ = {isa = PBXBuildFile; fileRef = B2279B6A1D6D45520099A2BF /* IR */; };
 		B2279B6F1D6D4C0A0099A2BF /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B2279B6E1D6D4C0A0099A2BF /* DataProvider.m */; };
-		B2441EEA1D67150E002C9ACA /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2441EE91D67150E002C9ACA /* libstdc++.6.0.9.tbd */; };
+		B25517401D9E006C00F1FDD9 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B255173F1D9E006C00F1FDD9 /* libstdc++.tbd */; };
+		B25517441D9E016200F1FDD9 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B25517431D9E016200F1FDD9 /* libstdc++.6.0.9.tbd */; };
 		B26006361D7E68A9000C9EFA /* RemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26006341D7E68A9000C9EFA /* RemoteViewController.m */; };
 		B26006371D7E68A9000C9EFA /* RemoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26006351D7E68A9000C9EFA /* RemoteViewController.xib */; };
 		B260063B1D7E9664000C9EFA /* RemoteViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B26006391D7E9664000C9EFA /* RemoteViewCell.m */; };
@@ -22,15 +20,24 @@
 		B26006521D8139EB000C9EFA /* WifiIRSetViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26006501D8139EB000C9EFA /* WifiIRSetViewCell.xib */; };
 		B26006561D828C8C000C9EFA /* WifiSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26006541D828C8C000C9EFA /* WifiSetViewController.m */; };
 		B26006571D828C8C000C9EFA /* WifiSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26006551D828C8C000C9EFA /* WifiSetViewController.xib */; };
+		B26006601D83F2AD000C9EFA /* IRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B260065E1D83F2AD000C9EFA /* IRDetailViewController.m */; };
+		B26006611D83F2AD000C9EFA /* IRDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B260065F1D83F2AD000C9EFA /* IRDetailViewController.xib */; };
 		B2610B501D6E8A1F0085635A /* MyHW.m in Sources */ = {isa = PBXBuildFile; fileRef = B2610B4F1D6E8A1F0085635A /* MyHW.m */; };
 		B2610B531D6EEBDC0085635A /* ClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2610B521D6EEBDC0085635A /* ClassViewController.m */; };
 		B263436F1D79691C0003E336 /* TVMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B263436D1D79691C0003E336 /* TVMatchViewController.m */; };
 		B26343701D79691C0003E336 /* TVMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B263436E1D79691C0003E336 /* TVMatchViewController.xib */; };
 		B267EB581D62B93700A7A18A /* FGLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B267EB571D62B93700A7A18A /* FGLanguageTool.m */; };
+		B287661C1DCC761A0053C405 /* libIRLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B287661B1DCC761A0053C405 /* libIRLib.a */; };
+		B287661E1DCC76250053C405 /* liblibelian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B287661D1DCC76250053C405 /* liblibelian.a */; };
+		B28766201DCC76300053C405 /* IR in Resources */ = {isa = PBXBuildFile; fileRef = B287661F1DCC76300053C405 /* IR */; };
 		B29ACBF51D73DA79005EDCE9 /* Speex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29ACBF41D73DA79005EDCE9 /* Speex.framework */; };
 		B29ACBF81D73DA9D005EDCE9 /* SpeechToTextModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B29ACBF71D73DA9D005EDCE9 /* SpeechToTextModule.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B2AABD721D6D321800D771F0 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2AABD711D6D321800D771F0 /* libstdc++.6.tbd */; };
-		B2BA38691D77D38100466EB3 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA38671D77D38100466EB3 /* ListViewController.m */; };
+		B2A7286F1D91232500BC6D7A /* IRSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A7286D1D91232500BC6D7A /* IRSetViewController.m */; };
+		B2A728701D91232500BC6D7A /* IRSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A7286E1D91232500BC6D7A /* IRSetViewController.xib */; };
+		B2C87AC21DA64244003A6052 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C87AC01DA64244003A6052 /* TestViewController.m */; };
+		B2C87AC31DA64244003A6052 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C87AC11DA64244003A6052 /* TestViewController.xib */; };
+		B2C87AC71DA6578D003A6052 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C87AC51DA6578D003A6052 /* MainViewController.m */; };
+		B2C87AC81DA6578D003A6052 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C87AC61DA6578D003A6052 /* MainViewController.xib */; };
 		B2CA29DC1D618C8E00BBD96D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CA29DB1D618C8E00BBD96D /* main.m */; };
 		B2CA29DF1D618C8E00BBD96D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CA29DE1D618C8E00BBD96D /* AppDelegate.m */; };
 		B2CA29E81D618C8E00BBD96D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CA29E61D618C8E00BBD96D /* Main.storyboard */; };
@@ -38,8 +45,11 @@
 		B2CA29ED1D618C8E00BBD96D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CA29EB1D618C8E00BBD96D /* LaunchScreen.storyboard */; };
 		B2CA29F81D618C8F00BBD96D /* BERemoteTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CA29F71D618C8F00BBD96D /* BERemoteTestTests.m */; };
 		B2CA2A031D618C8F00BBD96D /* BERemoteTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CA2A021D618C8F00BBD96D /* BERemoteTestUITests.m */; };
+		B2D31EBC1D87A61D00787795 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D31EBA1D87A61D00787795 /* ListViewController.m */; };
+		B2D31EBD1D87A61D00787795 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D31EBB1D87A61D00787795 /* ListViewController.xib */; };
+		B2D31EC21D88F32F00787795 /* ACRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D31EC01D88F32F00787795 /* ACRemoteViewController.m */; };
+		B2D31EC31D88F32F00787795 /* ACRemoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D31EC11D88F32F00787795 /* ACRemoteViewController.xib */; };
 		B2DF6F321D618EC4006908F2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF6F2F1D618EC4006908F2 /* BaseViewController.m */; };
-		B2DF6F331D618EC4006908F2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF6F311D618EC4006908F2 /* MainViewController.m */; };
 		B2DF6F431D619633006908F2 /* Language.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2DF6F451D619633006908F2 /* Language.strings */; };
 		B2DF6F521D61A020006908F2 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DF6F511D61A020006908F2 /* SettingViewController.m */; };
 /* End PBXBuildFile section */
@@ -62,12 +72,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B21FEB4C1D6D9395008B18CC /* libIRLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIRLib.a; sourceTree = "<group>"; };
-		B21FEB4E1D6D939F008B18CC /* liblibelian.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibelian.a; sourceTree = "<group>"; };
-		B2279B6A1D6D45520099A2BF /* IR */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IR; sourceTree = "<group>"; };
 		B2279B6D1D6D4C0A0099A2BF /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
 		B2279B6E1D6D4C0A0099A2BF /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
-		B2441EE91D67150E002C9ACA /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		B255173F1D9E006C00F1FDD9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		B25517431D9E016200F1FDD9 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		B26006331D7E68A9000C9EFA /* RemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteViewController.h; sourceTree = "<group>"; };
 		B26006341D7E68A9000C9EFA /* RemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteViewController.m; sourceTree = "<group>"; };
 		B26006351D7E68A9000C9EFA /* RemoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemoteViewController.xib; sourceTree = "<group>"; };
@@ -83,6 +91,9 @@
 		B26006531D828C8C000C9EFA /* WifiSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiSetViewController.h; sourceTree = "<group>"; };
 		B26006541D828C8C000C9EFA /* WifiSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiSetViewController.m; sourceTree = "<group>"; };
 		B26006551D828C8C000C9EFA /* WifiSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WifiSetViewController.xib; sourceTree = "<group>"; };
+		B260065D1D83F2AD000C9EFA /* IRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRDetailViewController.h; sourceTree = "<group>"; };
+		B260065E1D83F2AD000C9EFA /* IRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRDetailViewController.m; sourceTree = "<group>"; };
+		B260065F1D83F2AD000C9EFA /* IRDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRDetailViewController.xib; sourceTree = "<group>"; };
 		B2610B4E1D6E8A1F0085635A /* MyHW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHW.h; sourceTree = "<group>"; };
 		B2610B4F1D6E8A1F0085635A /* MyHW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHW.m; sourceTree = "<group>"; };
 		B2610B511D6EEBDC0085635A /* ClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassViewController.h; sourceTree = "<group>"; };
@@ -92,12 +103,21 @@
 		B263436E1D79691C0003E336 /* TVMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVMatchViewController.xib; sourceTree = "<group>"; };
 		B267EB561D62B93700A7A18A /* FGLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGLanguageTool.h; sourceTree = "<group>"; };
 		B267EB571D62B93700A7A18A /* FGLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGLanguageTool.m; sourceTree = "<group>"; };
+		B287661B1DCC761A0053C405 /* libIRLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libIRLib.a; sourceTree = "<group>"; };
+		B287661D1DCC76250053C405 /* liblibelian.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibelian.a; sourceTree = "<group>"; };
+		B287661F1DCC76300053C405 /* IR */ = {isa = PBXFileReference; lastKnownFileType = folder; path = IR; sourceTree = "<group>"; };
 		B29ACBF41D73DA79005EDCE9 /* Speex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Speex.framework; sourceTree = "<group>"; };
 		B29ACBF61D73DA9D005EDCE9 /* SpeechToTextModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechToTextModule.h; sourceTree = "<group>"; };
 		B29ACBF71D73DA9D005EDCE9 /* SpeechToTextModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechToTextModule.m; sourceTree = "<group>"; };
-		B2AABD711D6D321800D771F0 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
-		B2BA38661D77D38100466EB3 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		B2BA38671D77D38100466EB3 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		B2A7286C1D91232500BC6D7A /* IRSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRSetViewController.h; sourceTree = "<group>"; };
+		B2A7286D1D91232500BC6D7A /* IRSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRSetViewController.m; sourceTree = "<group>"; };
+		B2A7286E1D91232500BC6D7A /* IRSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IRSetViewController.xib; sourceTree = "<group>"; };
+		B2C87ABF1DA64244003A6052 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		B2C87AC01DA64244003A6052 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		B2C87AC11DA64244003A6052 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		B2C87AC41DA6578D003A6052 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B2C87AC51DA6578D003A6052 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B2C87AC61DA6578D003A6052 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		B2CA29D71D618C8E00BBD96D /* BERemoteTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BERemoteTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CA29DB1D618C8E00BBD96D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2CA29DD1D618C8E00BBD96D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,10 +132,14 @@
 		B2CA29FE1D618C8F00BBD96D /* BERemoteTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BERemoteTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CA2A021D618C8F00BBD96D /* BERemoteTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BERemoteTestUITests.m; sourceTree = "<group>"; };
 		B2CA2A041D618C8F00BBD96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2D31EB91D87A61D00787795 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		B2D31EBA1D87A61D00787795 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		B2D31EBB1D87A61D00787795 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		B2D31EBF1D88F32F00787795 /* ACRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACRemoteViewController.h; sourceTree = "<group>"; };
+		B2D31EC01D88F32F00787795 /* ACRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACRemoteViewController.m; sourceTree = "<group>"; };
+		B2D31EC11D88F32F00787795 /* ACRemoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACRemoteViewController.xib; sourceTree = "<group>"; };
 		B2DF6F2E1D618EC4006908F2 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		B2DF6F2F1D618EC4006908F2 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		B2DF6F301D618EC4006908F2 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		B2DF6F311D618EC4006908F2 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B2DF6F4C1D619709006908F2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Language.strings"; sourceTree = "<group>"; };
 		B2DF6F4D1D619712006908F2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Language.strings"; sourceTree = "<group>"; };
 		B2DF6F501D61A020006908F2 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
@@ -128,11 +152,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2AABD721D6D321800D771F0 /* libstdc++.6.tbd in Frameworks */,
+				B287661E1DCC76250053C405 /* liblibelian.a in Frameworks */,
+				B25517441D9E016200F1FDD9 /* libstdc++.6.0.9.tbd in Frameworks */,
+				B25517401D9E006C00F1FDD9 /* libstdc++.tbd in Frameworks */,
+				B287661C1DCC761A0053C405 /* libIRLib.a in Frameworks */,
 				B29ACBF51D73DA79005EDCE9 /* Speex.framework in Frameworks */,
-				B21FEB4D1D6D9395008B18CC /* libIRLib.a in Frameworks */,
-				B2441EEA1D67150E002C9ACA /* libstdc++.6.0.9.tbd in Frameworks */,
-				B21FEB4F1D6D939F008B18CC /* liblibelian.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,17 +209,16 @@
 				B2279B6E1D6D4C0A0099A2BF /* DataProvider.m */,
 				B2610B4E1D6E8A1F0085635A /* MyHW.h */,
 				B2610B4F1D6E8A1F0085635A /* MyHW.m */,
-				B2279B6A1D6D45520099A2BF /* IR */,
+				B287661F1DCC76300053C405 /* IR */,
 				B2DF6F501D61A020006908F2 /* SettingViewController.h */,
 				B2DF6F511D61A020006908F2 /* SettingViewController.m */,
 				B2DF6F2E1D618EC4006908F2 /* BaseViewController.h */,
 				B2DF6F2F1D618EC4006908F2 /* BaseViewController.m */,
-				B2DF6F301D618EC4006908F2 /* MainViewController.h */,
-				B2DF6F311D618EC4006908F2 /* MainViewController.m */,
 				B2610B511D6EEBDC0085635A /* ClassViewController.h */,
 				B2610B521D6EEBDC0085635A /* ClassViewController.m */,
-				B2BA38661D77D38100466EB3 /* ListViewController.h */,
-				B2BA38671D77D38100466EB3 /* ListViewController.m */,
+				B2D31EB91D87A61D00787795 /* ListViewController.h */,
+				B2D31EBA1D87A61D00787795 /* ListViewController.m */,
+				B2D31EBB1D87A61D00787795 /* ListViewController.xib */,
 				B263436C1D79691C0003E336 /* TVMatchViewController.h */,
 				B263436D1D79691C0003E336 /* TVMatchViewController.m */,
 				B263436E1D79691C0003E336 /* TVMatchViewController.xib */,
@@ -205,6 +228,9 @@
 				B26006331D7E68A9000C9EFA /* RemoteViewController.h */,
 				B26006341D7E68A9000C9EFA /* RemoteViewController.m */,
 				B26006351D7E68A9000C9EFA /* RemoteViewController.xib */,
+				B2D31EBF1D88F32F00787795 /* ACRemoteViewController.h */,
+				B2D31EC01D88F32F00787795 /* ACRemoteViewController.m */,
+				B2D31EC11D88F32F00787795 /* ACRemoteViewController.xib */,
 				B260064E1D8139EB000C9EFA /* WifiIRSetViewCell.h */,
 				B260064F1D8139EB000C9EFA /* WifiIRSetViewCell.m */,
 				B26006501D8139EB000C9EFA /* WifiIRSetViewCell.xib */,
@@ -214,6 +240,18 @@
 				B26006531D828C8C000C9EFA /* WifiSetViewController.h */,
 				B26006541D828C8C000C9EFA /* WifiSetViewController.m */,
 				B26006551D828C8C000C9EFA /* WifiSetViewController.xib */,
+				B260065D1D83F2AD000C9EFA /* IRDetailViewController.h */,
+				B260065E1D83F2AD000C9EFA /* IRDetailViewController.m */,
+				B260065F1D83F2AD000C9EFA /* IRDetailViewController.xib */,
+				B2A7286C1D91232500BC6D7A /* IRSetViewController.h */,
+				B2A7286D1D91232500BC6D7A /* IRSetViewController.m */,
+				B2A7286E1D91232500BC6D7A /* IRSetViewController.xib */,
+				B2C87ABF1DA64244003A6052 /* TestViewController.h */,
+				B2C87AC01DA64244003A6052 /* TestViewController.m */,
+				B2C87AC11DA64244003A6052 /* TestViewController.xib */,
+				B2C87AC41DA6578D003A6052 /* MainViewController.h */,
+				B2C87AC51DA6578D003A6052 /* MainViewController.m */,
+				B2C87AC61DA6578D003A6052 /* MainViewController.xib */,
 				B2CA29DD1D618C8E00BBD96D /* AppDelegate.h */,
 				B2CA29DE1D618C8E00BBD96D /* AppDelegate.m */,
 				B2CA29E61D618C8E00BBD96D /* Main.storyboard */,
@@ -255,11 +293,11 @@
 		B2DF6F361D618EF7006908F2 /* SDK_Library */ = {
 			isa = PBXGroup;
 			children = (
+				B287661B1DCC761A0053C405 /* libIRLib.a */,
+				B287661D1DCC76250053C405 /* liblibelian.a */,
+				B255173F1D9E006C00F1FDD9 /* libstdc++.tbd */,
+				B25517431D9E016200F1FDD9 /* libstdc++.6.0.9.tbd */,
 				B29ACBF41D73DA79005EDCE9 /* Speex.framework */,
-				B21FEB4C1D6D9395008B18CC /* libIRLib.a */,
-				B21FEB4E1D6D939F008B18CC /* liblibelian.a */,
-				B2AABD711D6D321800D771F0 /* libstdc++.6.tbd */,
-				B2441EE91D67150E002C9ACA /* libstdc++.6.0.9.tbd */,
 			);
 			name = SDK_Library;
 			sourceTree = "<group>";
@@ -326,7 +364,7 @@
 		B2CA29CF1D618C8E00BBD96D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Hung Ricky";
 				TargetAttributes = {
 					B2CA29D61D618C8E00BBD96D = {
@@ -372,16 +410,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2279B6B1D6D45520099A2BF /* IR in Resources */,
 				B2DF6F431D619633006908F2 /* Language.strings in Resources */,
 				B260063C1D7E9664000C9EFA /* RemoteViewCell.xib in Resources */,
 				B26006521D8139EB000C9EFA /* WifiIRSetViewCell.xib in Resources */,
 				B26006371D7E68A9000C9EFA /* RemoteViewController.xib in Resources */,
 				B26006571D828C8C000C9EFA /* WifiSetViewController.xib in Resources */,
 				B26343701D79691C0003E336 /* TVMatchViewController.xib in Resources */,
+				B2C87AC31DA64244003A6052 /* TestViewController.xib in Resources */,
+				B28766201DCC76300053C405 /* IR in Resources */,
 				B2CA29ED1D618C8E00BBD96D /* LaunchScreen.storyboard in Resources */,
+				B2D31EC31D88F32F00787795 /* ACRemoteViewController.xib in Resources */,
+				B2D31EBD1D87A61D00787795 /* ListViewController.xib in Resources */,
+				B2A728701D91232500BC6D7A /* IRSetViewController.xib in Resources */,
+				B26006611D83F2AD000C9EFA /* IRDetailViewController.xib in Resources */,
 				B26006481D811354000C9EFA /* WifiIRSetViewController.xib in Resources */,
 				B2CA29EA1D618C8E00BBD96D /* Assets.xcassets in Resources */,
+				B2C87AC81DA6578D003A6052 /* MainViewController.xib in Resources */,
 				B2CA29E81D618C8E00BBD96D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,21 +452,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				B260063B1D7E9664000C9EFA /* RemoteViewCell.m in Sources */,
+				B2D31EC21D88F32F00787795 /* ACRemoteViewController.m in Sources */,
+				B2D31EBC1D87A61D00787795 /* ListViewController.m in Sources */,
 				B2DF6F321D618EC4006908F2 /* BaseViewController.m in Sources */,
+				B2C87AC71DA6578D003A6052 /* MainViewController.m in Sources */,
+				B26006601D83F2AD000C9EFA /* IRDetailViewController.m in Sources */,
 				B29ACBF81D73DA9D005EDCE9 /* SpeechToTextModule.m in Sources */,
 				B26006561D828C8C000C9EFA /* WifiSetViewController.m in Sources */,
-				B2BA38691D77D38100466EB3 /* ListViewController.m in Sources */,
 				B2CA29DF1D618C8E00BBD96D /* AppDelegate.m in Sources */,
 				B263436F1D79691C0003E336 /* TVMatchViewController.m in Sources */,
 				B2610B531D6EEBDC0085635A /* ClassViewController.m in Sources */,
 				B267EB581D62B93700A7A18A /* FGLanguageTool.m in Sources */,
 				B26006471D811354000C9EFA /* WifiIRSetViewController.m in Sources */,
 				B2279B6F1D6D4C0A0099A2BF /* DataProvider.m in Sources */,
-				B2DF6F331D618EC4006908F2 /* MainViewController.m in Sources */,
 				B2CA29DC1D618C8E00BBD96D /* main.m in Sources */,
+				B2C87AC21DA64244003A6052 /* TestViewController.m in Sources */,
 				B2610B501D6E8A1F0085635A /* MyHW.m in Sources */,
 				B26006361D7E68A9000C9EFA /* RemoteViewController.m in Sources */,
 				B2DF6F521D61A020006908F2 /* SettingViewController.m in Sources */,
+				B2A7286F1D91232500BC6D7A /* IRSetViewController.m in Sources */,
 				B26006511D8139EB000C9EFA /* WifiIRSetViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -501,13 +550,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -536,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -545,13 +598,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -588,9 +644,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bomeans.remoter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7s armv7";
 			};
 			name = Debug;
 		};
@@ -612,9 +670,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bomeans.remoter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7s armv7";
 			};
 			name = Release;
 		};
