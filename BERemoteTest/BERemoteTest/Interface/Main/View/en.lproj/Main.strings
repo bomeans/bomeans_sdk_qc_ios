@@ -1,0 +1,93 @@
+
+/* Class = "UITableViewSection"; headerTitle = "型號清單"; ObjectID = "2gE-Mq-2Hl"; */
+"2gE-Mq-2Hl.headerTitle" = "型號清單";
+
+/* Class = "UITabBarItem"; title = "設定"; ObjectID = "45M-7f-ehy"; */
+"45M-7f-ehy.title" = "設定";
+
+/* Class = "UILabel"; text = "語言"; ObjectID = "5Sx-Qu-drd"; */
+"5Sx-Qu-drd.text" = "語言";
+
+/* Class = "UINavigationItem"; title = "TW"; ObjectID = "7U7-Lm-kEQ"; */
+"7U7-Lm-kEQ.title" = "TW";
+
+/* Class = "UITabBarItem"; title = "類別測試"; ObjectID = "8he-Fl-zB1"; */
+"8he-Fl-zB1.title" = "類別測試";
+
+/* Class = "UITableViewSection"; headerTitle = "創建遙控器"; ObjectID = "9tg-pI-scr"; */
+"9tg-pI-scr.headerTitle" = "創建遙控器";
+
+/* Class = "UITableViewSection"; headerTitle = "創建大萬能"; ObjectID = "AOB-Yg-roc"; */
+"AOB-Yg-roc.headerTitle" = "創建大萬能";
+
+/* Class = "UITableViewSection"; headerTitle = "智慧選碼"; ObjectID = "BKu-5b-3Fm"; */
+"BKu-5b-3Fm.headerTitle" = "智慧選碼";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "BZ9-Pg-lby"; */
+"BZ9-Pg-lby.text" = "Result";
+
+/* Class = "UIButton"; normalTitle = "Standby"; ObjectID = "CV2-Tr-z9D"; */
+"CV2-Tr-z9D.normalTitle" = "Standby";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "DHx-ZG-QCw"; */
+"DHx-ZG-QCw.text" = "Result";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "Fmh-lT-CfK"; */
+"Fmh-lT-CfK.title" = "Save";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "JJg-FR-6qj"; */
+"JJg-FR-6qj.text" = "Title";
+
+/* Class = "UITableViewSection"; headerTitle = "按鍵清單"; ObjectID = "KN5-SF-CSo"; */
+"KN5-SF-CSo.headerTitle" = "按鍵清單";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "Mg3-v6-WcG"; */
+"Mg3-v6-WcG.text" = "Result";
+
+/* Class = "UITableViewSection"; headerTitle = "廠牌清單"; ObjectID = "S4c-xP-NOn"; */
+"S4c-xP-NOn.headerTitle" = "廠牌清單";
+
+/* Class = "UINavigationItem"; title = "設定"; ObjectID = "SHW-Mz-jPE"; */
+"SHW-Mz-jPE.title" = "設定";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "W3k-tM-gTW"; */
+"W3k-tM-gTW.text" = "Result";
+
+/* Class = "UIBarButtonItem"; title = "CheckAll"; ObjectID = "Wb8-Gx-3dl"; */
+"Wb8-Gx-3dl.title" = "CheckAll";
+
+/* Class = "UIButton"; normalTitle = "轉發器設定"; ObjectID = "Yai-Mp-crA"; */
+"Yai-Mp-crA.normalTitle" = "轉發器設定";
+
+/* Class = "UITableViewSection"; headerTitle = "智慧選碼按鍵"; ObjectID = "Ypg-8g-oqR"; */
+"Ypg-8g-oqR.headerTitle" = "智慧選碼按鍵";
+
+/* Class = "UIButton"; normalTitle = "額外測試"; ObjectID = "ZHm-bu-gqu"; */
+"ZHm-bu-gqu.normalTitle" = "額外測試";
+
+/* Class = "UITabBarItem"; title = "簡易測試"; ObjectID = "don-ip-Qpa"; */
+"don-ip-Qpa.title" = "簡易測試";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "exF-W8-bv7"; */
+"exF-W8-bv7.text" = "Result";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "phb-xJ-LCC"; */
+"phb-xJ-LCC.text" = "Result";
+
+/* Class = "UIBarButtonItem"; title = "TW/CN"; ObjectID = "sIQ-DZ-dd3"; */
+"sIQ-DZ-dd3.title" = "TW/CN";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "tzg-AJ-6Jl"; */
+"tzg-AJ-6Jl.text" = "Detail";
+
+/* Class = "UITableViewSection"; headerTitle = "類型清單"; ObjectID = "uqd-br-TXn"; */
+"uqd-br-TXn.headerTitle" = "類型清單";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "vmk-z5-7Ra"; */
+"vmk-z5-7Ra.text" = "Result";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "vwi-Hg-Koh"; */
+"vwi-Hg-Koh.text" = "Result";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "x3P-gV-1It"; */
+"x3P-gV-1It.text" = "Result";
