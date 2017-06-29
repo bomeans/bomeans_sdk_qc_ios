@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ACPickerBrandViewController : UIViewController
+@interface SmartPickerBrandViewController : UIViewController
+
+@property (nonatomic, strong) NSString* typeID;
+@property (nonatomic, strong) NSString* typeName;
 
 @end

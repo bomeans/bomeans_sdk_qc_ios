@@ -176,9 +176,9 @@
                     break;
             }
         }else{
-            
-            [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifer];
-            cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifer];
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifer];
+            //[tableView registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:cellIdentifer];
+            //cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifer];
         }
     }
     

@@ -45,5 +45,5 @@ typedef NS_ENUM(NSUInteger, BIRDataServer){
 - (NSArray*)getKeyName:(NSString*)typeID;
 - (BIRVoiceSearchResultItem*) webVSearch : (NSString*)voiceCommand;
 - (int)getWifiIRState;
-
+- (id<BIRRemote>) createAcRemoterWithType:(NSString*)typeID withBrand:(NSString *)brandID andModel:(NSString *)modelID;
 @end

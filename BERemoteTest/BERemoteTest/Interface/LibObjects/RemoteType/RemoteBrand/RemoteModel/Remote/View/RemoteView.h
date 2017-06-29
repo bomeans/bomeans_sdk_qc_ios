@@ -12,6 +12,10 @@
 
 - (void)cellPress:(NSString*)item;
 
+@optional
+- (void)buttonTouchDown:(NSString*)item;
+- (void)buttonTouchCancel:(NSString*)item;
+
 @end
 
 @interface RemoteView : BaseView

@@ -77,7 +77,7 @@
     }
     
     NSString* className = [[self.cellArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%ld.%@", indexPath.row+1,className];
+    cell.textLabel.text = [NSString stringWithFormat:@"%d.%@", (unsigned)indexPath.row+1,className];
     //cell.detailTextLabel.text = @"";
     
     if (indexPath.section == 0) {

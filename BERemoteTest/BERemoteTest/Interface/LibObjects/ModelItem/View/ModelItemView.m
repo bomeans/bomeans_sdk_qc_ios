@@ -54,7 +54,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifer];
     
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifer];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifer];
     }
     
     NSArray *tempArray;
@@ -69,7 +69,7 @@
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@. %@", item.model, item.machineModel];
     cell.detailTextLabel.text = item.model;
-    cell.detailTextLabel.hidden = YES;
+    //cell.detailTextLabel.hidden = YES;
     
     return cell;
 }

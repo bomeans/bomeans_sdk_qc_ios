@@ -1,24 +1,24 @@
 //
-//  TVPickerBrandViewController.m
+//  SmartPickerBrandViewController.m
 //  BERemoteTest
 //
 //  Created by Hung Ricky on 2017/4/18.
 //  Copyright © 2017年 Hung Ricky. All rights reserved.
 //
 
-#import "TVPickerBrandViewController.h"
+#import "SmartPickerBrandViewController.h"
 #import "BrandItemView.h"
 #import "DataProvider.h"
-#import "TVPickerViewController.h"
+#import "SmartPickerViewController.h"
 
-@interface TVPickerBrandViewController () <BrandItemViewDelegate>
+@interface SmartPickerBrandViewController () <BrandItemViewDelegate>
 
 @property(nonatomic, strong)BrandItemView*  myView;
 @property(nonatomic, strong)DataProvider*   dataProvider;
 
 @end
 
-@implementation TVPickerBrandViewController
+@implementation SmartPickerBrandViewController
 
 - (BrandItemView*)myView
 {
@@ -50,7 +50,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.myView getDataSoruce:@[[_dataProvider getBrandListWithType:@"1"]]];
+    [self.myView getDataSoruce:@[[_dataProvider getBrandListWithType:self.typeID]]];
 }
 
 -(void)dealloc{
@@ -62,7 +62,9 @@
 
 #pragma mark - BrandItemViewDelegate
 -(void)cellPress:(NSString*)brandId withName:(NSString*)brandName{
-    TVPickerViewController *view = [[TVPickerViewController alloc] init];
+    SmartPickerViewController *view = [[SmartPickerViewController alloc] init];
+    view.typeID = _typeID;
+    view.typeName = _typeName;
     view.brandID = brandId;
     view.brandName = brandName;
     [self.navigationController pushViewController:view animated:YES];

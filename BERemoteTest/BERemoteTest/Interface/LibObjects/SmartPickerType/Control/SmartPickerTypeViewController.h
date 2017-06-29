@@ -1,5 +1,5 @@
 //
-//  TVPickerBrandViewController.h
+//  SmartPickerTypeViewController.h
 //  BERemoteTest
 //
 //  Created by Hung Ricky on 2017/4/18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TVPickerBrandViewController : UIViewController
+@interface SmartPickerTypeViewController : UIViewController
 
 @end

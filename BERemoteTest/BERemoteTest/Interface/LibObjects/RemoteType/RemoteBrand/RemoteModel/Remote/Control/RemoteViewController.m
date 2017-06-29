@@ -48,7 +48,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self myView];
-    _remote = [_dataProvider createRemoterWithType:_currentType withBrand:_currentBrand andModel:_currentModel];
+    if ([_currentType isEqualToString:@"2"]) {
+        _remote = [_dataProvider createAcRemoterWithType:_currentType withBrand:_currentBrand andModel:_currentModel];
+    }else{
+        _remote = [_dataProvider createRemoterWithType:_currentType withBrand:_currentBrand andModel:_currentModel];
+    }
+    
     NSArray *array;
     if ([_currentType isEqualToString:@"2"]) {
         array = [_remote getActiveKeys];
@@ -59,8 +64,18 @@
 }
 
 #pragma mark - RemoteViewDelegate
-- (void)cellPress:(NSString*)item{
+- (void)cellPress:(NSString*)item
+{
     [_remote transmitIR:item withOption:nil];
 }
 
+- (void)buttonTouchDown:(NSString*)item
+{
+    [_remote beginTransmitIR:item];
+}
+
+- (void)buttonTouchCancel:(NSString*)item
+{
+    [_remote endTransmitIR];
+}
 @end

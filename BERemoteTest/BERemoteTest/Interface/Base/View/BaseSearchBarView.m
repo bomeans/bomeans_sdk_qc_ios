@@ -7,6 +7,7 @@
 //
 
 #import "BaseSearchBarView.h"
+#import "BIRModelItem.h"
 
 @interface BaseSearchBarView() <UISearchResultsUpdating, UISearchBarDelegate>
 
@@ -52,9 +53,19 @@
     if (searchString == nil) {
         return;
     }
+    if ([[self.cellArray objectAtIndex:0] count] == 0) {
+        return;
+    }
     
     // Filter the data array and get only those countries that match the search text.
-    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@",searchString];
+    //NSPredicate* predicate = [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@",searchString];
+    NSPredicate* predicate;
+    if ([[[[self.cellArray objectAtIndex:0] objectAtIndex:0] class] isSubclassOfClass:[BIRModelItem class]]) {
+        predicate = [NSPredicate predicateWithFormat:@"self.model contains[c] %@",searchString];
+    }else{
+        predicate = [NSPredicate predicateWithFormat:@"self.name contains[c] %@",searchString];
+    }
+    
     self.filteredArray = [[self.cellArray objectAtIndex:0] filteredArrayUsingPredicate:predicate];
     
     // Reload the tableview.

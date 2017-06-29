@@ -10,6 +10,11 @@
 		B22B36911EAA096B0015F78C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22B36901EAA096B0015F78C /* Main.storyboard */; };
 		B22C2D931E836B21006EADAA /* DeviceTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22C2D921E836B21006EADAA /* DeviceTimingViewController.m */; };
 		B22C2D961E836B3E006EADAA /* DeviceTimingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B22C2D951E836B3E006EADAA /* DeviceTimingView.m */; };
+		B235AD031F04E0E800B1720D /* SmartPickerTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B235ACF71F04E0E800B1720D /* SmartPickerTypeViewController.m */; };
+		B235AD041F04E0E800B1720D /* SmartPickerBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B235ACFB1F04E0E800B1720D /* SmartPickerBrandViewController.m */; };
+		B235AD051F04E0E800B1720D /* SmartPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B235ACFF1F04E0E800B1720D /* SmartPickerViewController.m */; };
+		B235AD061F04E0E800B1720D /* SmartPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B235AD021F04E0E800B1720D /* SmartPickerView.m */; };
+		B235AD0A1F04E15300B1720D /* BIRAcRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = B235AD091F04E15300B1720D /* BIRAcRemote.m */; };
 		B2391EB61EA0729900686ED8 /* BaseSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391EB51EA0729900686ED8 /* BaseSearchBarView.m */; };
 		B2391EBE1EA0770000686ED8 /* TypeItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391EBD1EA0770000686ED8 /* TypeItemView.m */; };
 		B2391EC11EA0772600686ED8 /* TypeItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391EC01EA0772600686ED8 /* TypeItemViewController.m */; };
@@ -23,14 +28,11 @@
 		B2391EE51EA49EC800686ED8 /* KeyNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391EE41EA49EC800686ED8 /* KeyNameView.m */; };
 		B2391EEB1EA4A78200686ED8 /* WifiToIRDiscoveryView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391EEA1EA4A78200686ED8 /* WifiToIRDiscoveryView.m */; };
 		B2391EEE1EA4A79900686ED8 /* WifiToIRDisCoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391EED1EA4A79900686ED8 /* WifiToIRDisCoveryViewController.m */; };
-		B2391F0A1EA4BEC200686ED8 /* TVPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F091EA4BEC200686ED8 /* TVPickerViewController.m */; };
-		B2391F0D1EA4BEE800686ED8 /* TVPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F0C1EA4BEE800686ED8 /* TVPickerView.m */; };
 		B2391F1A1EA4CAC800686ED8 /* RemoteTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F191EA4CAC800686ED8 /* RemoteTypeViewController.m */; };
 		B2391F1D1EA5A05A00686ED8 /* RemoteBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F1C1EA5A05A00686ED8 /* RemoteBrandViewController.m */; };
 		B2391F221EA5A15500686ED8 /* RemoteModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F211EA5A15500686ED8 /* RemoteModelViewController.m */; };
 		B2391F251EA5A1C000686ED8 /* RemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F241EA5A1C000686ED8 /* RemoteViewController.m */; };
 		B2391F281EA5A20300686ED8 /* RemoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F271EA5A20300686ED8 /* RemoteView.m */; };
-		B2391F431EA5C2CB00686ED8 /* TVPickerBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F421EA5C2CB00686ED8 /* TVPickerBrandViewController.m */; };
 		B2391F731EA5F4E500686ED8 /* AcSampleBrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F701EA5F4E500686ED8 /* AcSampleBrandViewController.m */; };
 		B2391F761EA5F50300686ED8 /* AcSampleModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F751EA5F50300686ED8 /* AcSampleModelViewController.m */; };
 		B2391F7D1EA609A600686ED8 /* ACSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2391F7A1EA609A600686ED8 /* ACSampleViewController.m */; };
@@ -98,6 +100,16 @@
 		B22C2D921E836B21006EADAA /* DeviceTimingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTimingViewController.m; sourceTree = "<group>"; };
 		B22C2D941E836B3E006EADAA /* DeviceTimingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTimingView.h; sourceTree = "<group>"; };
 		B22C2D951E836B3E006EADAA /* DeviceTimingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTimingView.m; sourceTree = "<group>"; };
+		B235ACF61F04E0E800B1720D /* SmartPickerTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartPickerTypeViewController.h; sourceTree = "<group>"; };
+		B235ACF71F04E0E800B1720D /* SmartPickerTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartPickerTypeViewController.m; sourceTree = "<group>"; };
+		B235ACFA1F04E0E800B1720D /* SmartPickerBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartPickerBrandViewController.h; sourceTree = "<group>"; };
+		B235ACFB1F04E0E800B1720D /* SmartPickerBrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartPickerBrandViewController.m; sourceTree = "<group>"; };
+		B235ACFE1F04E0E800B1720D /* SmartPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartPickerViewController.h; sourceTree = "<group>"; };
+		B235ACFF1F04E0E800B1720D /* SmartPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartPickerViewController.m; sourceTree = "<group>"; };
+		B235AD011F04E0E800B1720D /* SmartPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartPickerView.h; sourceTree = "<group>"; };
+		B235AD021F04E0E800B1720D /* SmartPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartPickerView.m; sourceTree = "<group>"; };
+		B235AD081F04E15300B1720D /* BIRAcRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIRAcRemote.h; sourceTree = "<group>"; };
+		B235AD091F04E15300B1720D /* BIRAcRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIRAcRemote.m; sourceTree = "<group>"; };
 		B2391EB41EA0729900686ED8 /* BaseSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSearchBarView.h; sourceTree = "<group>"; };
 		B2391EB51EA0729900686ED8 /* BaseSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSearchBarView.m; sourceTree = "<group>"; };
 		B2391EBC1EA0770000686ED8 /* TypeItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeItemView.h; sourceTree = "<group>"; };
@@ -124,10 +136,6 @@
 		B2391EEA1EA4A78200686ED8 /* WifiToIRDiscoveryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiToIRDiscoveryView.m; sourceTree = "<group>"; };
 		B2391EEC1EA4A79900686ED8 /* WifiToIRDisCoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiToIRDisCoveryViewController.h; sourceTree = "<group>"; };
 		B2391EED1EA4A79900686ED8 /* WifiToIRDisCoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiToIRDisCoveryViewController.m; sourceTree = "<group>"; };
-		B2391F081EA4BEC200686ED8 /* TVPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVPickerViewController.h; sourceTree = "<group>"; };
-		B2391F091EA4BEC200686ED8 /* TVPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVPickerViewController.m; sourceTree = "<group>"; };
-		B2391F0B1EA4BEE800686ED8 /* TVPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVPickerView.h; sourceTree = "<group>"; };
-		B2391F0C1EA4BEE800686ED8 /* TVPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVPickerView.m; sourceTree = "<group>"; };
 		B2391F181EA4CAC800686ED8 /* RemoteTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteTypeViewController.h; sourceTree = "<group>"; };
 		B2391F191EA4CAC800686ED8 /* RemoteTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteTypeViewController.m; sourceTree = "<group>"; };
 		B2391F1B1EA5A05A00686ED8 /* RemoteBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteBrandViewController.h; sourceTree = "<group>"; };
@@ -138,8 +146,6 @@
 		B2391F241EA5A1C000686ED8 /* RemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteViewController.m; sourceTree = "<group>"; };
 		B2391F261EA5A20300686ED8 /* RemoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteView.h; sourceTree = "<group>"; };
 		B2391F271EA5A20300686ED8 /* RemoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteView.m; sourceTree = "<group>"; };
-		B2391F411EA5C2CB00686ED8 /* TVPickerBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVPickerBrandViewController.h; sourceTree = "<group>"; };
-		B2391F421EA5C2CB00686ED8 /* TVPickerBrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVPickerBrandViewController.m; sourceTree = "<group>"; };
 		B2391F6F1EA5F4E500686ED8 /* AcSampleBrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcSampleBrandViewController.h; sourceTree = "<group>"; };
 		B2391F701EA5F4E500686ED8 /* AcSampleBrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcSampleBrandViewController.m; sourceTree = "<group>"; };
 		B2391F741EA5F50300686ED8 /* AcSampleModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcSampleModelViewController.h; sourceTree = "<group>"; };
@@ -306,6 +312,78 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B235ACF41F04E0E800B1720D /* SmartPickerType */ = {
+			isa = PBXGroup;
+			children = (
+				B235ACF51F04E0E800B1720D /* Control */,
+				B235ACF81F04E0E800B1720D /* SmartPickerBrand */,
+			);
+			path = SmartPickerType;
+			sourceTree = "<group>";
+		};
+		B235ACF51F04E0E800B1720D /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				B235ACF61F04E0E800B1720D /* SmartPickerTypeViewController.h */,
+				B235ACF71F04E0E800B1720D /* SmartPickerTypeViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		B235ACF81F04E0E800B1720D /* SmartPickerBrand */ = {
+			isa = PBXGroup;
+			children = (
+				B235ACF91F04E0E800B1720D /* Control */,
+				B235ACFC1F04E0E800B1720D /* SmartPicker */,
+			);
+			path = SmartPickerBrand;
+			sourceTree = "<group>";
+		};
+		B235ACF91F04E0E800B1720D /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				B235ACFA1F04E0E800B1720D /* SmartPickerBrandViewController.h */,
+				B235ACFB1F04E0E800B1720D /* SmartPickerBrandViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		B235ACFC1F04E0E800B1720D /* SmartPicker */ = {
+			isa = PBXGroup;
+			children = (
+				B235ACFD1F04E0E800B1720D /* Control */,
+				B235AD001F04E0E800B1720D /* View */,
+			);
+			path = SmartPicker;
+			sourceTree = "<group>";
+		};
+		B235ACFD1F04E0E800B1720D /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				B235ACFE1F04E0E800B1720D /* SmartPickerViewController.h */,
+				B235ACFF1F04E0E800B1720D /* SmartPickerViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		B235AD001F04E0E800B1720D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B235AD011F04E0E800B1720D /* SmartPickerView.h */,
+				B235AD021F04E0E800B1720D /* SmartPickerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B235AD071F04E15300B1720D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B235AD081F04E15300B1720D /* BIRAcRemote.h */,
+				B235AD091F04E15300B1720D /* BIRAcRemote.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		B2391EB91EA076C900686ED8 /* TypeItem */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,51 +542,6 @@
 			children = (
 				B2391EE91EA4A78200686ED8 /* WifiToIRDiscoveryView.h */,
 				B2391EEA1EA4A78200686ED8 /* WifiToIRDiscoveryView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B2391F001EA4BE3700686ED8 /* TVPickerBrand */ = {
-			isa = PBXGroup;
-			children = (
-				B2391F011EA4BE3700686ED8 /* Control */,
-				B2391F041EA4BE3700686ED8 /* TVPicker */,
-			);
-			path = TVPickerBrand;
-			sourceTree = "<group>";
-		};
-		B2391F011EA4BE3700686ED8 /* Control */ = {
-			isa = PBXGroup;
-			children = (
-				B2391F411EA5C2CB00686ED8 /* TVPickerBrandViewController.h */,
-				B2391F421EA5C2CB00686ED8 /* TVPickerBrandViewController.m */,
-			);
-			path = Control;
-			sourceTree = "<group>";
-		};
-		B2391F041EA4BE3700686ED8 /* TVPicker */ = {
-			isa = PBXGroup;
-			children = (
-				B2391F051EA4BE3700686ED8 /* Control */,
-				B2391F061EA4BE3700686ED8 /* View */,
-			);
-			path = TVPicker;
-			sourceTree = "<group>";
-		};
-		B2391F051EA4BE3700686ED8 /* Control */ = {
-			isa = PBXGroup;
-			children = (
-				B2391F081EA4BEC200686ED8 /* TVPickerViewController.h */,
-				B2391F091EA4BEC200686ED8 /* TVPickerViewController.m */,
-			);
-			path = Control;
-			sourceTree = "<group>";
-		};
-		B2391F061EA4BE3700686ED8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B2391F0B1EA4BEE800686ED8 /* TVPickerView.h */,
-				B2391F0C1EA4BEE800686ED8 /* TVPickerView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -743,7 +776,7 @@
 				B2391EDD1EA49E6A00686ED8 /* KeyName */,
 				B2391EE61EA4A70800686ED8 /* WifiToIRDiscovery */,
 				B2391F0E1EA4CAA000686ED8 /* RemoteType */,
-				B2391F001EA4BE3700686ED8 /* TVPickerBrand */,
+				B235ACF41F04E0E800B1720D /* SmartPickerType */,
 				B2391F7F1EA6155100686ED8 /* ACPickerBrand */,
 				B2391F641EA5F4E500686ED8 /* AcSampleBrand */,
 			);
@@ -1052,19 +1085,11 @@
 		B2E1424C1E6D5368008A034E /* Operation */ = {
 			isa = PBXGroup;
 			children = (
-				B2E1424D1E6D5368008A034E /* Category */,
 				B2E1424E1E6D5368008A034E /* Data */,
 				B2E142511E6D5368008A034E /* Net */,
-				B2E142541E6D5368008A034E /* Tool */,
+				B235AD071F04E15300B1720D /* Tool */,
 			);
 			path = Operation;
-			sourceTree = "<group>";
-		};
-		B2E1424D1E6D5368008A034E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		B2E1424E1E6D5368008A034E /* Data */ = {
@@ -1083,13 +1108,6 @@
 				B2E142531E6D5368008A034E /* MyHW.m */,
 			);
 			path = Net;
-			sourceTree = "<group>";
-		};
-		B2E142541E6D5368008A034E /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		B2E142591E6D5368008A034E /* Resources */ = {
@@ -1209,7 +1227,6 @@
 				TargetAttributes = {
 					B2CA29D61D618C8E00BBD96D = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = M7S7Y42MZS;
 					};
 					B2CA29F21D618C8F00BBD96D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1284,16 +1301,18 @@
 				B22C2D961E836B3E006EADAA /* DeviceTimingView.m in Sources */,
 				B272A5591E7FBED900EE1D00 /* MMMaterialDesignSpinner.m in Sources */,
 				B272A5481E7BD1FA00EE1D00 /* AutoDimension.m in Sources */,
-				B2391F0D1EA4BEE800686ED8 /* TVPickerView.m in Sources */,
 				B272A5411E7BC9BB00EE1D00 /* DeviceWifiSetViewController.m in Sources */,
-				B2391F431EA5C2CB00686ED8 /* TVPickerBrandViewController.m in Sources */,
 				B2391EE51EA49EC800686ED8 /* KeyNameView.m in Sources */,
 				B2391F1D1EA5A05A00686ED8 /* RemoteBrandViewController.m in Sources */,
+				B235AD041F04E0E800B1720D /* SmartPickerBrandViewController.m in Sources */,
 				B2391F761EA5F50300686ED8 /* AcSampleModelViewController.m in Sources */,
 				B272A5651E8103D100EE1D00 /* DeviceProcessView.m in Sources */,
+				B235AD051F04E0E800B1720D /* SmartPickerViewController.m in Sources */,
 				B2391F8B1EA6155100686ED8 /* ACPickerView.m in Sources */,
 				B2391EE21EA49EB400686ED8 /* KeyNameViewController.m in Sources */,
+				B235AD0A1F04E15300B1720D /* BIRAcRemote.m in Sources */,
 				B272A56B1E81208F00EE1D00 /* DeviceProcessViewController.m in Sources */,
+				B235AD061F04E0E800B1720D /* SmartPickerView.m in Sources */,
 				B22C2D931E836B21006EADAA /* DeviceTimingViewController.m in Sources */,
 				B272A5581E7FBED900EE1D00 /* FBShimmeringView.m in Sources */,
 				B2391ED01EA45FFC00686ED8 /* ModelItemViewController.m in Sources */,
@@ -1330,7 +1349,7 @@
 				B2391EEE1EA4A79900686ED8 /* WifiToIRDisCoveryViewController.m in Sources */,
 				B2E1427F1E6D5368008A034E /* AppDelegate.m in Sources */,
 				B2391EEB1EA4A78200686ED8 /* WifiToIRDiscoveryView.m in Sources */,
-				B2391F0A1EA4BEC200686ED8 /* TVPickerViewController.m in Sources */,
+				B235AD031F04E0E800B1720D /* SmartPickerTypeViewController.m in Sources */,
 				B272A5571E7FBED900EE1D00 /* FBShimmeringLayer.m in Sources */,
 				B2391EC11EA0772600686ED8 /* TypeItemViewController.m in Sources */,
 				B272A55C1E7FBED900EE1D00 /* WSProgressHUD.m in Sources */,
@@ -1502,6 +1521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1530,6 +1550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

@@ -15,7 +15,7 @@
 #import "KeyNameViewController.h"
 #import "WifiToIRDisCoveryViewController.h"
 #import "RemoteTypeViewController.h"
-#import "TVPickerBrandViewController.h"
+#import "SmartPickerTypeViewController.h"
 #import "ACPickerBrandViewController.h"
 #import "AcSampleBrandViewController.h"
 
@@ -67,7 +67,7 @@
     
     NSMutableArray *remoteArray = [[NSMutableArray alloc] init];
     [remoteArray addObject:@"BIRRemote"];
-    [remoteArray addObject:@"BIRTVPicker"];
+    [remoteArray addObject:@"BIRSmartPicker"];
     [remoteArray addObject:@"BIRACPicker"];
     
     NSMutableArray *expansionArray = [[NSMutableArray alloc] init];
@@ -170,7 +170,7 @@
                 break;
             case 1:
             {
-                TVPickerBrandViewController *view = [[TVPickerBrandViewController alloc] init];
+                SmartPickerTypeViewController *view = [[SmartPickerTypeViewController alloc] init];
                 [self.navigationController pushViewController:view animated:YES];
             }
                 break;

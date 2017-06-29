@@ -1,5 +1,5 @@
 //
-//  TVPickerView.m
+//  SmartPickerView.m
 //  BERemoteTest
 //
 //  Created by Hung Ricky on 2017/4/17.

@@ -127,6 +127,10 @@
         
         
         NSError *jsonError = nil;
+        if (localData == nil) {
+            NSLog(@"server response fail!");
+            return NO;
+        }
         NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:localData
                                                                      options:NSJSONReadingAllowFragments
                                                                        error:&jsonError];

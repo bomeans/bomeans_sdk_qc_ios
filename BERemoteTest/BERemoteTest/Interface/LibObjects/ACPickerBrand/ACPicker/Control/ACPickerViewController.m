@@ -1,5 +1,5 @@
 //
-//  TVPickerViewController.m
+//  SmartPickerViewController.m
 //  BERemoteTest
 //
 //  Created by Hung Ricky on 2017/4/17.
@@ -88,11 +88,11 @@
 - (void)chooseModel{
     if (_modelArray.count == 0) {
         UIAlertController *alertView = [UIAlertController alertControllerWithTitle:@"Error" message:@"Did not find the matching remote control！" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-        [alertView addAction:okAction];
-        [self presentViewController:alertView animated:YES completion:^{
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [self.navigationController popViewControllerAnimated:YES];
         }];
+        [alertView addAction:okAction];
+        [self presentViewController:alertView animated:YES completion:nil];
     }else if (_modelArray.count == 1) {
         BIRModelItem* item = [_modelArray objectAtIndex:0];
         [self toCreateRemote:item.model];

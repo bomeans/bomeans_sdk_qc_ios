@@ -95,19 +95,19 @@
 
 -(NSString*)getTypeCount{
     NSArray *typeList = [_dataProvider getTypeList];
-    NSString *aString = [NSString stringWithFormat:@"typeCount : %lu", typeList.count];
+    NSString *aString = [NSString stringWithFormat:@"typeCount : %lu", (unsigned long)typeList.count];
     return [self addRunTimeWithString:aString];
 }
 
 -(NSString*)getBrandCount{
     NSArray *brandList = [_dataProvider getBrandListWithType:@"1"];
-    NSString *aString = [NSString stringWithFormat:@"brandCount : %lu", brandList.count];
+    NSString *aString = [NSString stringWithFormat:@"brandCount : %lu", (unsigned long)brandList.count];
     return [self addRunTimeWithString:aString];
 }
 
 -(NSString*)getModelCount{
     NSArray *modelList = [_dataProvider getModelListWithType:@"1" andBrand:@"12"];
-    NSString *aString = [NSString stringWithFormat:@"remoteCount : %lu", modelList.count];
+    NSString *aString = [NSString stringWithFormat:@"remoteCount : %lu", (unsigned long)modelList.count];
     return [self addRunTimeWithString:aString];
 }
 
@@ -118,19 +118,19 @@
 }
 
 -(NSString*)getAllKey{
-    NSString *aString = [NSString stringWithFormat:@"keyCount : %ld",[_remoter getAllKeys].count];
+    NSString *aString = [NSString stringWithFormat:@"keyCount : %ld",(unsigned long)[_remoter getAllKeys].count];
     return [self addRunTimeWithString:aString];
 }
 
 -(NSString*)getBigCombine{
     _remoterBig = [_dataProvider createBigCombineRemoterWithType:_typeId withBrand:_brandId];
-    NSString *aString = [NSString stringWithFormat:@"remoter's key : %ld",[_remoterBig getAllKeys].count];
+    NSString *aString = [NSString stringWithFormat:@"remoter's key : %ld",(unsigned long)[_remoterBig getAllKeys].count];
     return [self addRunTimeWithString:aString];
 }
 
 -(NSString*)getSmartKeyList{
     NSArray* keyList = [_dataProvider getSmartPickerKeyListWithType:@"1"];
-    NSString *aString = [NSString stringWithFormat:@"smartKeys : %ld", keyList.count];
+    NSString *aString = [NSString stringWithFormat:@"smartKeys : %ld", (unsigned long)keyList.count];
     return [self addRunTimeWithString:aString];
 }
 

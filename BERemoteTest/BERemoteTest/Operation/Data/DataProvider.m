@@ -8,6 +8,7 @@
 
 #import "DataProvider.h"
 #import "MyHW.h"
+#import "BIRAcRemote.h"
 
 static NSString* API_KEY= @""; // Bomeans apikey
 static DataProvider* _initDataProvider;
@@ -152,4 +153,14 @@ static DataProvider* _initDataProvider;
     //return [wifi isConnection];
 }
 
+#pragma mark - extension AcRemote Key, temp up/down
+//建立一支遙控器
+- (id<BIRRemote>) createAcRemoterWithType:(NSString*)typeID withBrand:(NSString *)brandID andModel:(NSString *)modelID{
+    id<BIRRemote> remote = [irKit createRemoteType:typeID withBrand:brandID andModel:modelID getNew:_getNew];
+    if ([typeID isEqualToString:@"2"]) {
+        return (id<BIRRemote>)[[BIRAcRemote alloc] initWithRemote:remote];
+    } else {
+        return remote;
+    }
+}
 @end

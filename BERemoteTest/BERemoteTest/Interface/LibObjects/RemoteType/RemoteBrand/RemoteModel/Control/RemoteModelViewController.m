@@ -49,7 +49,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
     [self.myView getDataSoruce:@[[_dataProvider getModelListWithType:self.currentType andBrand:self.currentBrand]]];
     
     UIBarButtonItem *naviButton = [[UIBarButtonItem alloc] initWithTitle:@"小萬能" style:UIBarButtonItemStylePlain target:self action:@selector(createUniversalRemote)];

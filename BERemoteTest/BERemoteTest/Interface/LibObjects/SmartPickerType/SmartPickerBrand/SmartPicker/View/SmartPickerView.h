@@ -1,5 +1,5 @@
 //
-//  TVPickerView.h
+//  SmartPickerView.h
 //  BERemoteTest
 //
 //  Created by Hung Ricky on 2017/4/17.
@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol TVPickerViewDelegate <NSObject>
+@protocol SmartPickerViewDelegate <NSObject>
 
 - (void)checkedButtonClick:(NSString*)title;
 
 @end
 
-@interface TVPickerView : UIView
+@interface SmartPickerView : UIView
 
-@property (nonatomic, weak) id<TVPickerViewDelegate>    delegate;
+@property (nonatomic, weak) id<SmartPickerViewDelegate>    delegate;
 - (void)setCheckedButtonTitle:(NSString*)title;
 
 @end

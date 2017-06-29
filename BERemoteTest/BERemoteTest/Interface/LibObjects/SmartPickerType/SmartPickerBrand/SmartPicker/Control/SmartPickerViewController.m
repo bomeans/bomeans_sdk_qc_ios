@@ -1,20 +1,20 @@
 //
-//  TVPickerViewController.m
+//  SmartPickerViewController.m
 //  BERemoteTest
 //
 //  Created by Hung Ricky on 2017/4/17.
 //  Copyright © 2017年 Hung Ricky. All rights reserved.
 //
 
-#import "TVPickerViewController.h"
-#import "TVPickerView.h"
+#import "SmartPickerViewController.h"
+#import "SmartPickerView.h"
 #import "DataProvider.h"
 #import "BIRModelItem.h"
 #import "RemoteViewController.h"
 
-@interface TVPickerViewController () <TVPickerViewDelegate>
+@interface SmartPickerViewController () <SmartPickerViewDelegate>
 
-@property (nonatomic, strong) TVPickerView*     myView;
+@property (nonatomic, strong) SmartPickerView*     myView;
 @property (nonatomic, strong) DataProvider*     dataProvider;
 @property (nonatomic, strong) id<BIRTVPicker>   picker;
 @property (nonatomic, strong) NSMutableArray*   modelArray;
@@ -22,12 +22,12 @@
 
 @end
 
-@implementation TVPickerViewController
+@implementation SmartPickerViewController
 
-- (TVPickerView*)myView{
+- (SmartPickerView*)myView{
     if (!_myView) {
         CGRect viewFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
-        _myView = [[TVPickerView alloc] initWithFrame:viewFrame];
+        _myView = [[SmartPickerView alloc] initWithFrame:viewFrame];
         _myView.delegate = self;
         [self.view addSubview:_myView];
     }
@@ -48,9 +48,9 @@
     // Do any additional setup after loading the view.
     [self myView];
     
-    self.navigationItem.title = [self.brandName stringByAppendingFormat:@"-%ld", _currentIndex];
+    self.navigationItem.title = [self.brandName stringByAppendingFormat:@"-%ld", (long)_currentIndex];
     _dataProvider = [DataProvider sharedInstance];
-    _picker = [_dataProvider createTVSmartPickerWithType:@"1" withBrand:self.brandID];
+    _picker = [_dataProvider createTVSmartPickerWithType:self.typeID withBrand:self.brandID];
     
     if ([_picker begin].length > 0) {
         [_myView setCheckedButtonTitle:[_picker begin]];
@@ -65,7 +65,7 @@
         if (key.length > 0) {
             [_myView setCheckedButtonTitle:key];
             _currentIndex++;
-            self.navigationItem.title = [self.brandName stringByAppendingFormat:@"-%ld", _currentIndex];
+            self.navigationItem.title = [self.brandName stringByAppendingFormat:@"-%ld", (long)_currentIndex];
         }
     }else if (BIR_PFind == result){
         NSArray *resultArray = [_picker getPickerResult];
@@ -112,13 +112,13 @@
 
 - (void)toCreateRemote:(NSString*)model{
     RemoteViewController *view = [[RemoteViewController alloc] init];
-    view.currentType = @"1";
+    view.currentType = self.typeID;
     view.currentBrand = self.brandID;
     view.currentModel = model;
     [self.navigationController pushViewController:view animated:YES];
 }
 
-#pragma mark - TVPickerViewDelegate
+#pragma mark - SmartPickerViewDelegate
 - (void)checkedButtonClick:(NSString*)title{
     [_picker transmitIR];
     

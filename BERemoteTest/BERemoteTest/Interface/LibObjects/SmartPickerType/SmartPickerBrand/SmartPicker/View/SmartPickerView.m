@@ -1,20 +1,20 @@
 //
-//  TVPickerView.m
+//  SmartPickerView.m
 //  BERemoteTest
 //
 //  Created by Hung Ricky on 2017/4/17.
 //  Copyright © 2017年 Hung Ricky. All rights reserved.
 //
 
-#import "TVPickerView.h"
+#import "SmartPickerView.h"
 
-@interface TVPickerView ()
+@interface SmartPickerView ()
 
 @property (nonatomic, strong) UIButton*     checkedButton;
 
 @end
 
-@implementation TVPickerView
+@implementation SmartPickerView
 
 - (UIButton*)checkedButton{
     if (!_checkedButton) {
