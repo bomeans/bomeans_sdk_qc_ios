@@ -30,13 +30,14 @@ typedef NS_ENUM(NSUInteger, BIRDataServer){
 
 - (void)setLanguage:(NSString*)aLanguage;//language setter
 - (NSString*)language; //language getter
-- (void)setIRHW:(BIRDataServer)aIRHW;
 - (BIRDataServer)IRHW;
+- (void)setIRHW:(BIRDataServer)aIRHW;
 
 - (NSArray*)getTypeList;
 - (NSArray*)getBrandListWithType:(NSString*)typeID;
 - (NSArray*)getTop10BrandListWithType:(NSString*)typeID;
 - (NSArray*)getModelListWithType:(NSString*)typeID andBrand:(NSString*)brandID;
+
 - (id<BIRRemote>) createRemoterWithType:(NSString*)typeID withBrand:(NSString *)brandID andModel:(NSString *)modelID;
 - (id<BIRRemote>) createBigCombineRemoterWithType:(NSString*)typeID withBrand:(NSString*)brandID;
 - (NSArray*)getSmartPickerKeyListWithType:(NSString*)typeID;
@@ -45,5 +46,5 @@ typedef NS_ENUM(NSUInteger, BIRDataServer){
 - (NSArray*)getKeyName:(NSString*)typeID;
 - (BIRVoiceSearchResultItem*) webVSearch : (NSString*)voiceCommand;
 - (int)getWifiIRState;
-- (id<BIRRemote>) createAcRemoterWithType:(NSString*)typeID withBrand:(NSString *)brandID andModel:(NSString *)modelID;
+
 @end

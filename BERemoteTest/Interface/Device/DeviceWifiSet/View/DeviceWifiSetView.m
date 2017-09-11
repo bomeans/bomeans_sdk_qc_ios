@@ -104,7 +104,7 @@
     }
 }
 
-#pragma mark - UITextFieldDelegate
+#pragma mark - UIViewTouchEvent
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     if (![_ssidField isExclusiveTouch]) {

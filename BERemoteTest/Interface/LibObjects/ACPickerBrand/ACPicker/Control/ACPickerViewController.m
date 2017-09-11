@@ -197,7 +197,7 @@ NSTimer* recountTimer;
     [_recountView setMsgLableText:[NSString stringWithFormat:@"%d", self.recountTimeNum]];
 }
 
--(void)autoPickerOnLast{
+-(void)autoPickerNoMatches{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Tip" message:@"自動配對發碼結束" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction* _Nonnull action){
     }];

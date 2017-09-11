@@ -41,7 +41,7 @@
 
 /**
  Set whether the key of the current test has an action on the target machine.
- @param 'YES' mean it's work, 'NO' is no work.
+ @param haveWork 'YES' mean it's work, 'NO' is no work.
  @return 'BIR_PNext' for try next key, 'BIR_PFind' for find remote, 'BIR_PFail' mean can't find remote.
  */
 -(int) keyResult : (BOOL) haveWork;
@@ -84,7 +84,7 @@
 
 /**
  it's callback for -(int)beginTransmitIR
- @interface
+ interface
  @property (nonatomic, strong) BIRAcAutoPicker*  smartPicker;
  end
  
@@ -103,7 +103,7 @@
 @protocol BIRAcAutoPickerDelegate <NSObject>
 
 -(void)acAutoPickerIndex:(int)index withModel:(BIRModelItem*)model;
--(void)autoPickerOnLast;
+-(void)autoPickerNoMatches;
 
 @end
 

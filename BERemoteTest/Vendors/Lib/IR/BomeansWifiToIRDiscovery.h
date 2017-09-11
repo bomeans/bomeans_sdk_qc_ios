@@ -19,7 +19,7 @@
 @protocol GCDAsyncUdpSocketDelegate;
 
 
-@interface BomeansWifiToIRDiscovery : NSObject//<GCDAsyncUdpSocketDelegate>
+@interface BomeansWifiToIRDiscovery : NSObject<GCDAsyncUdpSocketDelegate>
 
 @property NSMutableDictionary *allWifiToIr;    // 所有找到的wifiToIr
                                                         // 其中. key 是String 為mac address
@@ -31,7 +31,7 @@
  在背景找尋WifiToIR Device
  input :
    tryMaxCount : 嘗試找尋次數
-   delegate    : 你的callback 設計必須合乎 @protocol BIRWifiToIRDiscoveryDelegate
+   delegate    : 你的callback 設計必須合乎 protocol BIRWifiToIRDiscoveryDelegate
  return
   YES 只是表示. discory 有開始. 並非正的有找到
  note :

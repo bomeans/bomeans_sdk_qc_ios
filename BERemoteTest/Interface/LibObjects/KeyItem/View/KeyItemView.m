@@ -7,7 +7,6 @@
 //
 
 #import "KeyItemView.h"
-#import "BIRKeyItem.h"
 
 @interface KeyItemView () <UITableViewDataSource, UITableViewDelegate>
 

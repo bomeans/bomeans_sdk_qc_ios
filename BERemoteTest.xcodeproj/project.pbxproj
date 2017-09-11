@@ -65,6 +65,9 @@
 		B272A55C1E7FBED900EE1D00 /* WSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B272A5561E7FBED900EE1D00 /* WSProgressHUD.m */; };
 		B272A5651E8103D100EE1D00 /* DeviceProcessView.m in Sources */ = {isa = PBXBuildFile; fileRef = B272A5641E8103D100EE1D00 /* DeviceProcessView.m */; };
 		B272A56B1E81208F00EE1D00 /* DeviceProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B272A56A1E81208F00EE1D00 /* DeviceProcessViewController.m */; };
+		B275DA4B1F66235100905CCE /* KeyItemOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B275DA471F66235100905CCE /* KeyItemOptionsViewController.m */; };
+		B275DA4C1F66235100905CCE /* KeyItemOptionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B275DA4A1F66235100905CCE /* KeyItemOptionsView.m */; };
+		B275DA4F1F66238B00905CCE /* DataProvider+AcRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = B275DA4E1F66238B00905CCE /* DataProvider+AcRemote.m */; };
 		B2CA29F81D618C8F00BBD96D /* BERemoteTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CA29F71D618C8F00BBD96D /* BERemoteTestTests.m */; };
 		B2CA2A031D618C8F00BBD96D /* BERemoteTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CA2A021D618C8F00BBD96D /* BERemoteTestUITests.m */; };
 		B2E1427F1E6D5368008A034E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E141E61E6D5368008A034E /* AppDelegate.m */; };
@@ -233,6 +236,12 @@
 		B272A5641E8103D100EE1D00 /* DeviceProcessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceProcessView.m; sourceTree = "<group>"; };
 		B272A5691E81208F00EE1D00 /* DeviceProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceProcessViewController.h; sourceTree = "<group>"; };
 		B272A56A1E81208F00EE1D00 /* DeviceProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceProcessViewController.m; sourceTree = "<group>"; };
+		B275DA461F66235100905CCE /* KeyItemOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyItemOptionsViewController.h; sourceTree = "<group>"; };
+		B275DA471F66235100905CCE /* KeyItemOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyItemOptionsViewController.m; sourceTree = "<group>"; };
+		B275DA491F66235100905CCE /* KeyItemOptionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyItemOptionsView.h; sourceTree = "<group>"; };
+		B275DA4A1F66235100905CCE /* KeyItemOptionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyItemOptionsView.m; sourceTree = "<group>"; };
+		B275DA4D1F66238B00905CCE /* DataProvider+AcRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DataProvider+AcRemote.h"; sourceTree = "<group>"; };
+		B275DA4E1F66238B00905CCE /* DataProvider+AcRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DataProvider+AcRemote.m"; sourceTree = "<group>"; };
 		B2CA29D71D618C8E00BBD96D /* BERemoteTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BERemoteTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CA29F31D618C8F00BBD96D /* BERemoteTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BERemoteTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CA29F71D618C8F00BBD96D /* BERemoteTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BERemoteTestTests.m; sourceTree = "<group>"; };
@@ -479,6 +488,7 @@
 		B2391ED41EA4694F00686ED8 /* KeyItem */ = {
 			isa = PBXGroup;
 			children = (
+				B275DA441F66235100905CCE /* KeyItemOptions */,
 				B2391ED51EA4694F00686ED8 /* Control */,
 				B2391ED61EA4694F00686ED8 /* View */,
 			);
@@ -953,6 +963,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B275DA441F66235100905CCE /* KeyItemOptions */ = {
+			isa = PBXGroup;
+			children = (
+				B275DA451F66235100905CCE /* Control */,
+				B275DA481F66235100905CCE /* View */,
+			);
+			path = KeyItemOptions;
+			sourceTree = "<group>";
+		};
+		B275DA451F66235100905CCE /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				B275DA461F66235100905CCE /* KeyItemOptionsViewController.h */,
+				B275DA471F66235100905CCE /* KeyItemOptionsViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		B275DA481F66235100905CCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B275DA491F66235100905CCE /* KeyItemOptionsView.h */,
+				B275DA4A1F66235100905CCE /* KeyItemOptionsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B2CA29CE1D618C8E00BBD96D = {
 			isa = PBXGroup;
 			children = (
@@ -1108,6 +1145,8 @@
 		B2E1424D1E6D5368008A034E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B275DA4D1F66238B00905CCE /* DataProvider+AcRemote.h */,
+				B275DA4E1F66238B00905CCE /* DataProvider+AcRemote.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1256,16 +1295,13 @@
 				TargetAttributes = {
 					B2CA29D61D618C8E00BBD96D = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = M7S7Y42MZS;
 					};
 					B2CA29F21D618C8F00BBD96D = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7988AZ3THX;
 						TestTargetID = B2CA29D61D618C8E00BBD96D;
 					};
 					B2CA29FD1D618C8F00BBD96D = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 7988AZ3THX;
 						TestTargetID = B2CA29D61D618C8E00BBD96D;
 					};
 				};
@@ -1349,6 +1385,7 @@
 				B2391F731EA5F4E500686ED8 /* AcSampleBrandViewController.m in Sources */,
 				B2301E021EF77E630039D158 /* SmartPickerBrandViewController.m in Sources */,
 				B272A4FA1E767EFA00EE1D00 /* MyTabBarController.m in Sources */,
+				B275DA4B1F66235100905CCE /* KeyItemOptionsViewController.m in Sources */,
 				B2E1428B1E6D5368008A034E /* MainViewController.m in Sources */,
 				B2E1429E1E6D5368008A034E /* DataProvider.m in Sources */,
 				B272A5221E7A72C600EE1D00 /* DeviceViewController.m in Sources */,
@@ -1358,6 +1395,7 @@
 				B235ACDA1F04A0B200B1720D /* BIRAcRemote.m in Sources */,
 				B2391ED91EA4696000686ED8 /* KeyItemView.m in Sources */,
 				B2391EB61EA0729900686ED8 /* BaseSearchBarView.m in Sources */,
+				B275DA4C1F66235100905CCE /* KeyItemOptionsView.m in Sources */,
 				B272A5161E7936C900EE1D00 /* LibObjectsViewController.m in Sources */,
 				B2391EC71EA4544500686ED8 /* BrandItemView.m in Sources */,
 				B2391EDC1EA4698100686ED8 /* KeyItemViewController.m in Sources */,
@@ -1379,6 +1417,7 @@
 				B2391F221EA5A15500686ED8 /* RemoteModelViewController.m in Sources */,
 				B2391EEE1EA4A79900686ED8 /* WifiToIRDisCoveryViewController.m in Sources */,
 				B2E1427F1E6D5368008A034E /* AppDelegate.m in Sources */,
+				B275DA4F1F66238B00905CCE /* DataProvider+AcRemote.m in Sources */,
 				B2391EEB1EA4A78200686ED8 /* WifiToIRDiscoveryView.m in Sources */,
 				B272A5571E7FBED900EE1D00 /* FBShimmeringLayer.m in Sources */,
 				B23653501F185F3900E4C98D /* RecountView.m in Sources */,
@@ -1560,6 +1599,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1588,6 +1628,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1614,6 +1655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BERemoteTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hung.BERemoteTestTests;
@@ -1626,6 +1668,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BERemoteTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hung.BERemoteTestTests;
@@ -1637,6 +1680,7 @@
 		B2CA2A0E1D618C8F00BBD96D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BERemoteTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hung.BERemoteTestUITests;
@@ -1649,6 +1693,7 @@
 		B2CA2A0F1D618C8F00BBD96D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BERemoteTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hung.BERemoteTestUITests;

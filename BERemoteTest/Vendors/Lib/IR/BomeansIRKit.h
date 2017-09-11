@@ -40,7 +40,7 @@
 
 /** 
  Set use server, the function can be instead of setUseChineseServer(Bool)
- @param BIRServer: if input invalid value, will be use BIR_TW
+ @param server: if input invalid value, will be use BIR_TW
 */
 +(void) setServer:(BIRServer)server;
 

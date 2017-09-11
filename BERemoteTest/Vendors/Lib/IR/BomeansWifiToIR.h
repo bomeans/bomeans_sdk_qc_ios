@@ -172,9 +172,9 @@
  * @param onOff
  *   YES 打開
  *   NO 關掉
- * @param hour
- * @param min
- * @param sec
+ * @param hour hour
+ * @param min minute
+ * @param sec second
  * @return
  *   BIROK  設定成功
  */
@@ -189,9 +189,9 @@
  * @param onOff
  *   YES 打開
  *   NO 關掉
- * @param hour
- * @param min
- * @param sec
+ * @param hour hour
+ * @param min minute
+ * @param sec second
  * @return
  *   BIROK  設定成功
  */

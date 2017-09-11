@@ -54,7 +54,7 @@ enum LearningErrorCode {
 /**
  * The matched remote controller(s) of the loaded learning data.<br>
  * Note: the matched remote controller list is the result of accumulated learning data since the last call of reset().
- * @param mCloudMatchResultList list of remote controller info
+ * @param remoteMatchResult list of remote controller info
  obj in array is BIRRemoteMatchResult
  */
 -(void) onRemoteMatchSucceeded : (NSArray*) remoteMatchResult;
@@ -111,7 +111,7 @@ enum LearningErrorCode {
 
 /**
  * Invoked when the learning data is not received or is incorrect.
- * @param errorCode
+ * @param errorCode error code
  */
 -(void) onLearningDataFailed : (int) errorCode;
 
@@ -132,9 +132,9 @@ enum LearningErrorCode {
  * Loading learning data into the reader for parsing.
  *
  * @param data data bytes to be parsed
- * @param isPayloadOnly true if the passing data bytes are payload data only (exclude the prefix, postfix, checksum,..etc),
+ * @param payloadOnly true if the passing data bytes are payload data only (exclude the prefix, postfix, checksum,..etc),
  * or false if the passing data contains the full packet returned from the MCU (the full packet looks like this: 0xFF, 0x61, ..., 0xF0)
- * @param isCompressedFormat true if the containing payload data are in compressed format, or false if in plain(uncompressed) format.
+ * @param compressedFormat true if the containing payload data are in compressed format, or false if in plain(uncompressed) format.
  * (note: most likely it's in compressed format, so if unsure, set it to true)
  * @return true if the passing data is valid
  */
@@ -216,11 +216,6 @@ enum LearningErrorCode {
  */
 -(int) stopLearning;
 
-/**
- * Send the learned IR signal.<br>
- *
- * @param learningData The learning data get from startLearningAndGetData();
- */
 /**
  * Send the learned IR signal.<br>
  * @param learningData The learning data get from startLearningAndGetData().

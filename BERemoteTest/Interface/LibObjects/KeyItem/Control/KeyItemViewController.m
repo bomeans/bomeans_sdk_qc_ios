@@ -9,6 +9,7 @@
 #import "KeyItemViewController.h"
 #import "KeyItemView.h"
 #import "DataProvider.h"
+#import "KeyItemOptionsViewController.h"
 
 @interface KeyItemViewController () <KeyItemViewDelegate>
 
@@ -51,18 +52,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     if (!_currentType) {
-        self.currentType = @"1";
+        //self.currentType = @"1";
+        self.currentType = @"2";
     }
     if (!_currentBrand) {
-        self.currentBrand = @"12";
+        //self.currentBrand = @"12";
+        self.currentBrand = @"1449";
     }
     if (!_currentModel) {
-        self.currentModel = @"LCD100";
+        //self.currentModel = @"LCD100";
+        self.currentModel = @"DAIKIN_ARC433A57";
     }
     
     _remote = [_dataProvider createRemoterWithType:_currentType withBrand:_currentBrand andModel:_currentModel];
     
-    NSArray *array = [_remote getAllKeys];
+    NSArray *array;
+    if ([_currentType isEqualToString:@"2"]) {
+        array = [_remote getActiveKeys];
+    }else{
+        array = [_remote getAllKeys];
+    }
+    
     if (!array) {
         array = [NSArray arrayWithObjects:@"", nil];
     }
@@ -79,7 +89,16 @@
 
 #pragma mark - KeyItemViewDelegate
 -(void)cellPress:(NSString*)keyId withName:(NSString*)keyName{
-    [self.navigationController popViewControllerAnimated:YES];
+    if ([_currentType isEqualToString:@"2"]) {
+        KeyItemOptionsViewController *vc = [[KeyItemOptionsViewController alloc] init];
+        vc.currentType = _currentType;
+        vc.currentBrand = _currentBrand;
+        vc.currentModel = _currentModel;
+        vc.currentKeyID = keyId;
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 

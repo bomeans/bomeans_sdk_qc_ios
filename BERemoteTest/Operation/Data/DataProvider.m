@@ -8,7 +8,6 @@
 
 #import "DataProvider.h"
 #import "MyHW.h"
-#import "BIRAcRemote.h"
 
 static NSString* API_KEY= @""; // Bomeans apikey
 static DataProvider* _initDataProvider;
@@ -62,8 +61,8 @@ static DataProvider* _initDataProvider;
         {
             [defaultValue setObject:@"cloud" forKey:@"wifiToIR"];
             //使用自定義的HW(遠端)
-            MyHW* myHW1 = [[MyHW alloc]init];
-            [irKit setIRHW:myHW1];
+            MyHW* _myHW = [[MyHW alloc]init];
+            [irKit setIRHW:_myHW];
         }
             break;
         case BIRLocal:
@@ -78,6 +77,7 @@ static DataProvider* _initDataProvider;
     }
     [defaultValue synchronize];
 }
+
 - (BIRDataServer)IRHW{
     NSString* wifiToIR = [defaultValue stringForKey:@"wifiToIR"];
     BIRDataServer irhw;
@@ -143,7 +143,7 @@ static DataProvider* _initDataProvider;
 }
 
 //語音發碼
--(BIRVoiceSearchResultItem*) webVSearch : (NSString*)voiceCommand{
+- (BIRVoiceSearchResultItem*) webVSearch : (NSString*)voiceCommand{
     return [irKit webVSearch:voiceCommand language:language];
 }
 
@@ -153,14 +153,4 @@ static DataProvider* _initDataProvider;
     //return [wifi isConnection];
 }
 
-#pragma mark - extension AcRemote Key, temp up/down
-//建立一支遙控器
-- (id<BIRRemote>) createAcRemoterWithType:(NSString*)typeID withBrand:(NSString *)brandID andModel:(NSString *)modelID{
-    id<BIRRemote> remote = [irKit createRemoteType:typeID withBrand:brandID andModel:modelID getNew:_getNew];
-    if ([typeID isEqualToString:@"2"]) {
-        return (id<BIRRemote>)[[BIRAcRemote alloc] initWithRemote:remote];
-    } else {
-        return remote;
-    }
-}
 @end

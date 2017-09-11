@@ -9,6 +9,7 @@
 #import "RemoteViewController.h"
 #import "RemoteView.h"
 #import "DataProvider.h"
+#import "DataProvider+AcRemote.h"
 
 @interface RemoteViewController () <RemoteViewDelegate>
 

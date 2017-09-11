@@ -143,18 +143,6 @@
 #pragma mark - MainViewDelegate
 - (void)didChangeServer
 {
-//    [self clearData];
-//    if ([self.navigationItem.title isEqualToString:@"TW"]) {
-//        self.navigationItem.title = @"CN";
-//        [BomeansIRKit setUseChineseServer:YES]; //預設值:NO=tw, YES=cn
-//        [_dataProvider setLanguage:@"cn"];
-//    }
-//    else {
-//        self.navigationItem.title = @"TW";
-//        [BomeansIRKit setUseChineseServer:NO]; //預設值:NO=tw, YES=cn
-//        [_dataProvider setLanguage:@"tw"];
-//    }
-    
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Choice Server" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *twAction = [UIAlertAction actionWithTitle:@"TW" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self clearData];
